@@ -14,7 +14,7 @@ fn main() {
                 .position((100.0, 100.0))
                 .size(372.0, 768.0)
                 .resizeable(true)
-                .child(MainView::create().build(ctx))
+                .child(MainView::create().title("Hello OrbTk").build(ctx))
                 .build(ctx)
         })
         .run();
