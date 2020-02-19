@@ -1,0 +1,4 @@
+[[apps]]
+name = "{{crate_name}}"
+width = 374
+height = 768

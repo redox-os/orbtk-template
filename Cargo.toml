@@ -1,0 +1,16 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+authors = ["{{authors}}"]
+edition = "2018"
+readme = "README.md"
+license = "MIT"
+
+[profile.dev]
+opt-level = 1
+
+[features]
+debug = ["orbtk/debug"]
+
+[dependencies]
+orbtk = { git = "https://github.com/redox-os/orbtk.git", branch= "develop" }
