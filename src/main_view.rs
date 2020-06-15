@@ -10,6 +10,6 @@ widget!(
 
 impl Template for MainView {
     fn template(self, id: Entity, ctx: &mut BuildContext) -> Self {
-        self.name("MainView").child(TextBlock::create().text(("title", id)).build(ctx))
+        self.name("MainView").child(TextBlock::new().text(("title", id)).build(ctx))
     }
 }
