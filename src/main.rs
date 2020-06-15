@@ -9,12 +9,12 @@ mod main_view;
 fn main() {
     Application::from_name("{{project-name}}")
         .window(move |ctx| {
-            Window::create()
+            Window::new()
                 .title("{{project-name}}")
                 .position((100.0, 100.0))
                 .size(372.0, 768.0)
                 .resizeable(true)
-                .child(MainView::create().title("Hello OrbTk").build(ctx))
+                .child(MainView::new().title("Hello OrbTk").build(ctx))
                 .build(ctx)
         })
         .run();
