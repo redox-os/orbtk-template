@@ -4,7 +4,7 @@ use crate::MainState;
 
 widget!(
     MainView<MainState> {
-        title: String16
+        title: String
     }
 );
 
